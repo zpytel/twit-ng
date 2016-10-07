@@ -21,6 +21,13 @@ tweets = [
 
   ngOnInit() {
   }
+  myFavs(arr:string[]){
+   alert("Favs " + arr);
+  }
+  myRetweets(arr:string[]){
+   alert("Retweets " + arr);
+  }
+
   makeAvatar():string{
     let id=Math.floor(Math.random()*10)+1;
     return `https://randomuser.me/api/portraits/med/women/${id}.jpg`
